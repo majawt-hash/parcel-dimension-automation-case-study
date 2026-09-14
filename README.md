@@ -30,4 +30,46 @@ graph TD
     G -->|Option B| I[Przekierowanie: Odbiór w Punkcie POP]
     H & I --> J[Aktualizacja statusu w systemie i przekierowanie paczki]
 ```
-Analiza SWOT rozwiązaniaMocne strony (Strengths)Słabe strony (Weaknesses)• Eliminacja niepotrzebnych kursów kuriera• Automatyczna komunikacja w czasie rzeczywistym• Szybkie wdrożenie dzięki architekturze Low-Code (n8n)• Zależność od dokładności skanowania na sortowni• Konieczność reakcji klienta na powiadomienieSzanse (Opportunities)Zagrożenia (Threats)• Wzrost wskaźnika NPS (klient sam decyduje o paczce)• Odciążenie infolinii i doręczycieli• Możliwość ponownego wykorzystania workflow dla innych wyjątków• Opóźnienie decyzji klienta wydłużające czas magazynowania3. Business Case & Return on Investment (ROI)Uwaga: Poniższe wyliczenia opierają się na szacunkowych założeniach operacyjnych na potrzeby zadania rekrutacyjnego.Założenia (Assumptions):Skala: 1 000 przypadków przekroczenia gabarytu miesięcznie w skali kraju.Koszt próby doręczenia przez kuriera: ~15 PLN (czas przerwanej pracy, paliwo, obsługa telefoniczna).Łączny miesięczny koszt przetrzymywania wyjątku (As-Is): 1 000 × 15 PLN = 15 000 PLN / miesiąc.Koszty wdrożenia rozwiązania (CAPEX / OPEX):Jednorazowy koszt wdrożenia (CAPEX): Zaprojektowanie, konfiguracja i testy workflow w n8n (~40h pracy Process Automation Designera) = ~6 000 PLN.Utrzymanie miesięczne (OPEX): Zużycie API / zasoby n8n = ~300 PLN / miesiąc.Efektywność finansowa:Oszczędność operacyjna brutto: ~15 000 PLN / miesiąc.Oszczędność netto: ~14 700 PLN / miesiąc.Zwrot z inwestycji (Payback Period): ~13 dni od momentu wdrożenia.4. Implementation RoadmapTydzień 1: Analiza i mapowanie APIZmapowanie punktów styku (punkt weryfikacji wymiarów na sortowni).Określenie endpointów API do zmiany statusu paczki i wysyłki powiadomień.Tydzień 2: Budowa prototypu w n8nStworzenie workflow logicznego (Webhooks, warunki IF, integracja z bramką SMS/Push).Przygotowanie dedykowanego mikrosformularza dla klienta (wybór: Kurier / POP).Tydzień 3: Testy i obsługa błędów (Error Handling)Testy wydajnościowe oraz weryfikacja scenariusza, w którym klient nie podejmie decyzji w ciągu 12h (fallback do POP).Tydzień 4: Produkcja i monitoringWdrożenie produkcyjne na wybranym oddziale pilotażowym.Ustawienie monitoringu błędów i wskaźników wykonania workflow.
+### Analiza SWOT rozwiązania
+
+| Mocne strony (Strengths) | Słabe strony (Weaknesses) |
+| :--- | :--- |
+| • Eliminacja niepotrzebnych kursów kuriera<br>• Automatyczna komunikacja w czasie rzeczywistym<br>• Szybkie wdrożenie dzięki architekturze Low-Code (n8n) | • Zależność od dokładności skanowania na sortowni<br>• Konieczność reakcji klienta na powiadomienie |
+| **Szanse (Opportunities)** | **Zagrożenia (Threats)** |
+| • Wzrost wskaźnika NPS (klient sam decyduje o paczce)<br>• Odciążenie infolinii i doręczycieli<br>• Możliwość ponownego wykorzystania workflow dla innych wyjątków | • Opóźnienie decyzji klienta wydłużające czas magazynowania |
+
+---
+
+## 3. Business Case & Return on Investment (ROI)
+
+*Uwaga: Poniższe wyliczenia opierają się na szacunkowych założeniach operacyjnych na potrzeby zadania rekrutacyjnego.*
+
+### Założenia (Assumptions):
+* **Skala:** 1 000 przypadków przekroczenia gabarytu miesięcznie w skali kraju.
+* **Koszt próby doręczenia przez kuriera:** ~15 PLN (czas przerwanej pracy, paliwo, obsługa telefoniczna).
+* **Łączny miesięczny koszt przetrzymywania wyjątku (As-Is):** 1 000 × 15 PLN = **15 000 PLN / miesiąc**.
+
+### Koszty wdrożenia rozwiązania (CAPEX / OPEX):
+* **Jednorazowy koszt wdrożenia (CAPEX):** Zaprojektowanie, konfiguracja i testy workflow w n8n (~40h pracy Process Automation Designera) = **~6 000 PLN**.
+* **Utrzymanie miesięczne (OPEX):** Zużycie API / zasoby n8n = **~300 PLN / miesiąc**.
+
+### Efektywność finansowa:
+* **Oszczędność operacyjna brutto:** ~15 000 PLN / miesiąc.
+* **Oszczędność netto:** ~14 700 PLN / miesiąc.
+* **Zwrot z inwestycji (Payback Period):** **~13 dni** od momentu wdrożenia.
+
+---
+
+## 4. Implementation Roadmap
+
+1. **Tydzień 1: Analiza i mapowanie API**
+   * Zmapowanie punktów styku (punkt weryfikacji wymiarów na sortowni).
+   * Określenie endpointów API do zmiany statusu paczki i wysyłki powiadomień.
+2. **Tydzień 2: Budowa prototypu w n8n**
+   * Stworzenie workflow logicznego (Webhooks, warunki `IF`, integracja z bramką SMS/Push).
+   * Przygotowanie dedykowanego mikrosformularza dla klienta (wybór: Kurier / POP).
+3. **Tydzień 3: Testy i obsługa błędów (Error Handling)**
+   * Testy wydajnościowe oraz weryfikacja scenariusza, w którym klient nie podejmie decyzji w ciągu 12h (fallback do POP).
+4. **Tydzień 4: Produkcja i monitoring**
+   * Wdrożenie produkcyjne na wybranym oddziale pilotażowym.
+   * Ustawienie monitoringu błędów i wskaźników wykonania workflow.
