@@ -28,7 +28,8 @@ graph TD
     F --> G{Decyzja klienta w aplikacji}
     G -->|Option A| H[Przekierowanie: Doręczenie kurierem pod adres]
     G -->|Option B| I[Przekierowanie: Odbiór w Punkcie POP]
-    H & I --> J[Aktualizacja statusu w systemie i przekierowanie paczki]
+    H --> J[Aktualizacja statusu w systemie i przekierowanie paczki]
+    I --> J
 ```
 ### Analiza SWOT rozwiązania
 
