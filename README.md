@@ -43,7 +43,7 @@ graph TD
 
 ## 3. Business Case & Return on Investment (ROI)
 
-*Uwaga: Poniższe wyliczenia opierają się na szacunkowych założeniach operacyjnych na potrzeby zadania rekrutacyjnego.*
+*Uwaga: Poniższe wyliczenia opierają się na szacunkowych założeniach operacyjnych na potrzeby zadania.*
 
 ### Założenia (Assumptions):
 * **Skala:** 1 000 przypadków przekroczenia gabarytu miesięcznie w skali kraju.
