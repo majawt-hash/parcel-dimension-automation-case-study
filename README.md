@@ -1,4 +1,4 @@
-# InPost Process Automation Case Study
+# Process Automation Case Study
 **Role:** Process Automation Designer  
 **Project:** Automatyzacja obsługi wyjątku przekroczenia gabarytu przesyłki (Over-dimension Exception Handling)  
 
