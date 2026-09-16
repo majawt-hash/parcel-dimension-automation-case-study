@@ -46,8 +46,10 @@ graph TD
 *Uwaga: Poniższe wyliczenia opierają się na szacunkowych założeniach operacyjnych na potrzeby zadania.*
 
 ### 1. Obecnie ponoszone koszty (Stan As-Is)
+* **Skala i założenia:** Przyjęto ultraostrożne, minimalne założenie **1 000 błędów gabarytowych miesięcznie** w skali całego kraju. 
+  > *Rzeczywisty kontekst:* Przy wolumenie ok. 63 mln paczek obsługiwanych przez InPost w Polsce miesięcznie, odpowiada to zaledwie **~0,0016% wszystkich przesyłek** (1 przypadek błędu na 63 000 paczek).
 * **Koszt pojedynczego wyjątku:** ~15 PLN (nieefektywny czas pracy kuriera pod Paczkomatem, próba załadunku, obsługa telefoniczna z klientem oraz logistyka zwrotna przesyłki na magazyn).
-* **Miesięczny koszt błędów:** ~15 000 PLN / miesiąc (1 000 przypadków przekroczenia gabarytu w skali kraju × 15 PLN).
+* **Miesięczny koszt błędów:** ~15 000 PLN / miesiąc (1 000 przypadków × 15 PLN).
 
 ### 2. Koszty wdrożenia rozwiązania (Stan To-Be)
 * **Jednorazowy koszt wdrożenia (CAPEX):** ~6 000 PLN (zaprojektowanie, konfiguracja i testy workflow w n8n; ~40h pracy Process Automation Designera).
