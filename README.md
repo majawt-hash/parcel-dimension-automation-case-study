@@ -47,7 +47,7 @@ graph TD
 
 ### 1. Obecnie ponoszone koszty (Stan As-Is)
 * **Skala i założenia:** Przyjęto ultraostrożne, minimalne założenie **1 000 błędów gabarytowych miesięcznie** w skali całego kraju. 
-  > *Rzeczywisty kontekst:* Przy wolumenie ok. 63 mln paczek obsługiwanych przez InPost w Polsce miesięcznie, odpowiada to zaledwie **~0,0016% wszystkich przesyłek** (1 przypadek błędu na 63 000 paczek).
+  > *Rzeczywisty kontekst:* Przy wolumenie ok. 63 mln paczek obsługiwanych przez wiodącego operatora logistycznego w Polsce miesięcznie, odpowiada to zaledwie **~0,0016% wszystkich przesyłek** (1 przypadek błędu na 63 000 paczek).
 * **Koszt pojedynczego wyjątku:** ~15 PLN (nieefektywny czas pracy kuriera pod Paczkomatem, próba załadunku, obsługa telefoniczna z klientem oraz logistyka zwrotna przesyłki na magazyn).
 * **Miesięczny koszt błędów:** ~15 000 PLN / miesiąc (1 000 przypadków × 15 PLN).
 
