@@ -56,9 +56,9 @@ graph TD
 * **Koszt utrzymania miesięczny (OPEX):** ~300 PLN / miesiąc 
   *(Obejmuje koszt wysyłki powiadomień SMS/Push dla 1 000 wyselekcjonowanych wyjątków oraz krańcowy koszt zasobów instancji n8n Self-hosted, przetwarzającej zdarzenia i weryfikującej warunki gabarytowe dla przepływu).*
 
-### 3. Oszczędność
-* **Oszczędność brutto:** ~15 000 PLN / miesiąc (eliminacja pustych przebiegów i telefonicznej obsługi wyjątku).
-* **Oszczędność netto:** ~14 700 PLN / miesiąc (po uwzględnieniu miesięcznego kosztu OPEX: 15 000 PLN - 300 PLN).
+**3. Oszczędność i Wynik Finansowy**
+* **Miesięczna oszczędność operacyjna netto:** **~14 700 PLN / miesiąc** *(15 000 PLN oszczędności brutto − 300 PLN OPEX)*.
+* **Oszczędność netto w 1. roku (z uwzględnieniem CAPEX):** **~170 400 PLN** *(12 × 14 700 PLN oszczędności operacyjnej − 6 000 PLN jednorazowego CAPEX)*.
 
 ### 4. Zwrot z inwestycji (Payback Period)
 * **Czas zwrotu:** ~13 dni od momentu wdrożenia rozwiązania na produkcję (6 000 PLN CAPEX / 14 700 PLN oszczędności netto miesięcznie = ~0,4 miesiąca).
