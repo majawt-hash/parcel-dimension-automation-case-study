@@ -9,7 +9,7 @@ W procesie logistycznym zdarzają się przypadki, gdy przesyłka zaadresowana do
 
 **Stan obecny (As-Is):**
 * Paczka z błędnymi gabarytami przechodzi przez sortownię i trafia do auta kuriera.
-* Kurier na miejscu pod Paczkomatem odkrywa brak możliwości umieszczenia przesyłki w skrytce.
+* Kurier na miejscu pod automatem paczkowym odkrywa brak możliwości umieszczenia przesyłki w skrytce.
 * Kurier traci czas na bezpośredni kontakt telefoniczny z klientem lub zwraca paczkę do oddziału.
 * **Marnotrawstwo:** Koszt paliwa, strata czasu pracy kuriera, opóźnienia w doręczeniach innych paczek, niski wskaźnik Customer Experience (NPS).
 
