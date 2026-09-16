@@ -54,7 +54,7 @@ graph TD
 ### 2. Koszty wdrożenia rozwiązania (Stan To-Be)
 * **Jednorazowy koszt wdrożenia (CAPEX):** ~6 000 PLN (zaprojektowanie, konfiguracja i testy workflow w n8n; ~40h pracy Process Automation Designera).
 * **Koszt utrzymania miesięczny (OPEX):** ~300 PLN / miesiąc 
-  *(Obejmuje koszt wysyłki powiadomień SMS/Push dla 1 000 wyjątków oraz koszt zasobów instancji n8n Self-hosted przy założeniu wstępnej filtracji zdarzeń na poziomie API/Webhooka przed przekazaniem do workflow).*
+  *(Obejmuje koszt wysyłki powiadomień SMS/Push dla 1 000 wyselekcjonowanych wyjątków oraz krańcowy koszt zasobów instancji n8n Self-hosted, przetwarzającej zdarzenia i weryfikującej warunki gabarytowe dla przepływu).*
 
 ### 3. Oszczędność
 * **Oszczędność brutto:** ~15 000 PLN / miesiąc (eliminacja pustych przebiegów i telefonicznej obsługi wyjątku).
