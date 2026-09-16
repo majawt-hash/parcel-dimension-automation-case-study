@@ -72,7 +72,7 @@ graph TD
    * Określenie endpointów API do zmiany statusu paczki i wysyłki powiadomień.
 2. **Tydzień 2: Budowa prototypu w n8n**
    * Stworzenie workflow logicznego (Webhooks, warunki `IF`, integracja z bramką SMS/Push).
-   * Przygotowanie dedykowanego mikrosformularza dla klienta (wybór: Kurier / POP).
+   * Przygotowanie dedykowanego mikroformularza dla klienta (wybór: Kurier / POP).
 3. **Tydzień 3: Testy i obsługa błędów (Error Handling)**
    * Testy wydajnościowe oraz weryfikacja scenariusza, w którym klient nie podejmie decyzji w ciągu 12h (fallback do POP).
 4. **Tydzień 4: Produkcja i monitoring**
