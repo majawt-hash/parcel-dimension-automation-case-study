@@ -5,7 +5,7 @@
 ---
 
 ## 1. Problem Statement & Context
-W procesie logistycznym zdarzają się przypadki, gdy przesyłka zaadresowana do Paczkomatu® przekracza maksymalne dopuszczalne wymiary (np. skrytka Gabaryt C). Przyczyną mogą być błędne dane wprowadzone przez nadawcę, zmiana opakowania zbiorczego lub błąd integracji API po stronie e-commerce.
+W procesie logistycznym zdarzają się przypadki, gdy przesyłka zaadresowana do automatu paczkowego przekracza maksymalne dopuszczalne wymiary (tj. największą skrytkę). Przyczyną mogą być błędne dane wprowadzone przez nadawcę, zmiana opakowania zbiorczego lub błąd integracji API po stronie e-commerce.
 
 **Stan obecny (As-Is):**
 * Paczka z błędnymi gabarytami przechodzi przez sortownię i trafia do auta kuriera.
@@ -16,12 +16,12 @@ W procesie logistycznym zdarzają się przypadki, gdy przesyłka zaadresowana do
 ---
 
 ## 2. Proposed Solution (To-Be Workflow)
-Wdrożenie automatycznego przepływu danych (**Dimension Exception Workflow**) z wykorzystaniem platformy Low-Code (np. n8n) połączonej z API InPost oraz systemami powiadomień.
+Wdrożenie automatycznego przepływu danych (**Dimension Exception Workflow**) z wykorzystaniem platformy Low-Code (np. n8n) połączonej z API operatora oraz systemami powiadomień.
 
 ```mermaid
 graph TD
-    A[Skaner gabarytów w sortowni / API InPost] -->|Wysyłka danych o wymiarach| B(n8n Webhook Trigger)
-    B --> C{Czy wymiary > Gabaryt C?}
+    A[Skaner gabarytów w sortowni / API Carrier] -->|Wysyłka danych o wymiarach| B(n8n Webhook Trigger)
+    B --> C{Czy wymiary > Max Gabaryt?}
     C -->|Nie| D[Standardowa ścieżka doręczenia]
     C -->|Tak| E[Wstrzymanie wydania kurierowi]
     E --> F[Wysyłka automatycznego powiadomienia Push/SMS/WhatsApp z linkiem]
