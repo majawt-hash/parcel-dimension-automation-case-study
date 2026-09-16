@@ -45,19 +45,20 @@ graph TD
 
 *Uwaga: Poniższe wyliczenia opierają się na szacunkowych założeniach operacyjnych na potrzeby zadania.*
 
-### Założenia (Assumptions):
-* **Skala:** 1 000 przypadków przekroczenia gabarytu miesięcznie w skali kraju.
-* **Koszt próby doręczenia przez kuriera:** ~15 PLN (czas przerwanej pracy, paliwo, obsługa telefoniczna).
-* **Łączny miesięczny koszt przetrzymywania wyjątku (As-Is):** 1 000 × 15 PLN = **15 000 PLN / miesiąc**.
+### 1. Obecnie ponoszone koszty (Stan As-Is)
+* **Koszt pojedynczego wyjątku:** ~15 PLN (nieefektywny czas pracy kuriera pod Paczkomatem, próba załadunku, obsługa telefoniczna z klientem oraz logistyka zwrotna przesyłki na magazyn).
+* **Miesięczny koszt błędów:** ~15 000 PLN / miesiąc (1 000 przypadków przekroczenia gabarytu w skali kraju × 15 PLN).
 
-### Koszty wdrożenia rozwiązania (CAPEX / OPEX):
-* **Jednorazowy koszt wdrożenia (CAPEX):** Zaprojektowanie, konfiguracja i testy workflow w n8n (~40h pracy Process Automation Designera) = **~6 000 PLN**.
-* **Utrzymanie miesięczne (OPEX):** Zużycie API / zasoby n8n = **~300 PLN / miesiąc**.
+### 2. Koszty wdrożenia rozwiązania (Stan To-Be)
+* **Jednorazowy koszt wdrożenia (CAPEX):** ~6 000 PLN (zaprojektowanie, konfiguracja i testy workflow w n8n; ~40h pracy Process Automation Designera).
+* **Koszt utrzymania miesięczny (OPEX):** ~300 PLN / miesiąc (utrzymanie infrastruktury/instancji n8n oraz zużycie API InPost/powiadomień).
 
-### Efektywność finansowa:
-* **Oszczędność operacyjna brutto:** ~15 000 PLN / miesiąc.
-* **Oszczędność netto:** ~14 700 PLN / miesiąc.
-* **Zwrot z inwestycji (Payback Period):** **~13 dni** od momentu wdrożenia.
+### 3. Oszczędność
+* **Oszczędność brutto:** ~15 000 PLN / miesiąc (eliminacja pustych przebiegów i telefonicznej obsługi wyjątku).
+* **Oszczędność netto:** ~14 700 PLN / miesiąc (po uwzględnieniu miesięcznego kosztu OPEX: 15 000 PLN - 300 PLN).
+
+### 4. Zwrot z inwestycji (Payback Period)
+* **Czas zwrotu:** ~13 dni od momentu wdrożenia rozwiązania na produkcję (6 000 PLN CAPEX / 14 700 PLN oszczędności netto miesięcznie = ~0,4 miesiąca).
 
 ---
 
